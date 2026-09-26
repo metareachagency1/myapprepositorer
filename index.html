@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaReach Agency - M.Adil Butt</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Checkpoints Header -->
+    <header>
+        <div class="brand-container">
+            <img src="adil cv picture.jpeg" alt="M.Adil Butt" class="owner-img">
+            <div class="brand-title">
+                <h1>MetaReach Agency</h1>
+                <p>Owner: M.Adil Butt</p>
+            </div>
+        </div>
+        <nav>
+            <button class="nav-btn active" onclick="switchPage('services-page', this)">Services</button>
+            <button class="nav-btn" onclick="switchPage('planning-page', this)">Social Media Marketing</button>
+            <button class="nav-btn" onclick="switchPage('contact-page', this)">Contact</button>
+        </nav>
+    </header>
+
+    <div class="main-container">
+
+        <!-- SERVICES PAGE -->
+        <section id="services-page" class="page active">
+            
+            <!-- About Me Section -->
+            <div class="about-section">
+                <h3>About Me</h3>
+                <p>Hi, I’m M. Adil Butt, a Social Media Marketing Specialist with 4 years of experience in the digital marketing field.</p>
+                <p>Over the past few years, I’ve helped businesses improve their presence on Facebook and Instagram, connect with their target audience, and grow through the right social media strategies.</p>
+                <p>I enjoy creating content, managing social media pages, running ads, generating leads, and finding practical ways to help businesses get better results online.</p>
+                <p>For me, social media isn’t just about posting content — it’s about building a real connection with people and turning that attention into growth.</p>
+                <div class="skills-tags">4 Years of Experience | Social Media Marketing | Facebook & Instagram | Paid Ads | Lead Generation | Content Strategy</div>
+            </div>
+
+            <h2>Our Professional Services</h2>
+            <div class="services-grid">
+                <div class="service-card">Ads for Facebook with proper ad copy</div>
+                <div class="service-card">Business page setup</div>
+                <div class="service-card">Find username</div>
+                <div class="service-card">Page management with 4 post weekly</div>
+                <div class="service-card">Schedule posts / reels / story</div>
+                <div class="service-card">Increase Page followers & engagement</div>
+                <div class="service-card">WhatsApp / Messenger leads</div>
+                <div class="service-card">Lead generation</div>
+                <div class="service-card">Instagram Setup</div>
+                <div class="service-card">Instagram marketing</div>
+                <div class="service-card">Instagram Posting / reels / story</div>
+                <div class="service-card">Complete social media marketing and Management</div>
+            </div>
+
+            <div class="smm-highlight-box">
+                <h3>Explore Our Strategic SMM Packages</h3>
+                <p>Check out our professional plans tailored to scale your brand presence.</p>
+                <button class="smm-btn" onclick="switchPage('planning-page', document.querySelectorAll('.nav-btn')[1])">View Social Media Marketing Plans</button>
+            </div>
+        </section>
+
+        <!-- PLANNING PAGE -->
+        <section id="planning-page" class="page">
+            <h2>Social Media Marketing Plans</h2>
+            <div class="plans-grid">
+                <!-- Basic Plan -->
+                <div class="plan-card">
+                    <h3>BASIC PLAN</h3>
+                    <p>Perfect for startups & consistent presence</p>
+                    <ul class="plan-features">
+                        <li>Social Media Setup</li>
+                        <li>Social Media Management</li>
+                        <li>Facebook & Instagram Ads (Basic Setup)</li>
+                        <li>Content Creation</li>
+                        <li>Page Management</li>
+                        <li>Brand Awareness Optimization</li>
+                        <li>15 Posts / Month</li>
+                        <li>2 Reels / Month</li>
+                        <li>Monthly Performance Report</li>
+                        <li>Basic Monthly Strategy</li>
+                        <li>Basic Audience Targeting</li>
+                    </ul>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="plan-card popular">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <h3>STANDARD PLAN</h3>
+                    <p>For brands ready to scale engagement & reach</p>
+                    <ul class="plan-features">
+                        <li>Social Media Setup</li>
+                        <li>Social Media Management</li>
+                        <li>Facebook & Instagram Ads (Advanced Strategy)</li>
+                        <li>Content Creation (High-quality creatives)</li>
+                        <li>Page & Community Management</li>
+                        <li>Brand Awareness + Engagement Strategy</li>
+                        <li>Custom Audience Targeting & Retargeting</li>
+                        <li>Ad Campaign Management & Optimization</li>
+                        <li>10 Posts / Month</li>
+                        <li>10 Reels / Month</li>
+                        <li>Monthly + Weekly Performance Reports</li>
+                    </ul>
+                </div>
+
+                <!-- Custom Plan -->
+                <div class="plan-card">
+                    <h3>CUSTOM PLAN</h3>
+                    <p>Built for aggressive growth & performance marketing</p>
+                    <ul class="plan-features">
+                        <li>Everything in Standard Plan PLUS:</li>
+                        <li>Google Ads Management (Search, Display, YouTube)</li>
+                        <li>Full Funnel Marketing Strategy</li>
+                        <li>Lead Generation Campaigns</li>
+                        <li>PR & Brand Outreach Campaigns</li>
+                        <li>UGC Strategy & Execution</li>
+                        <li>Dedicated Account Management</li>
+                        <li>Weekly Strategy Calls</li>
+                        <li>Advanced Analytics & Insights Reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="contact-page" class="page">
+            <h2>Get In Touch</h2>
+            <div class="contact-box">
+                <p class="contact-item"><strong>Email:</strong> metareachagency1@gmail.com</p>
+                <p class="contact-item"><strong>Phone / WhatsApp:</strong> +923243718590</p>
+                <a href="https://wa.me/923243718590" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MetaReach Agency. Owned by M.Adil Butt. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function switchPage(pageId, btnElement) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(pageId).classList.add('active');
+            btnElement.classList.add('active');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
